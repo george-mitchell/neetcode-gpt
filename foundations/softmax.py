@@ -9,5 +9,5 @@ class Solution:
         # Hint: subtract max(z) for numerical stability before computing exp
         mx = max(z)
         num = np.exp(z - mx)
-        denom = np.sum(np.exp(z - mx))
+        denom = np.sum(num)
         return np.round(np.divide(num, denom), 4)
